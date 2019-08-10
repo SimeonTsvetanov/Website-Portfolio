@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color:  rgb(78, 78, 78);
+}
+
+/* Style the header */
+.header {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 5px;   
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+
+
+}
+#headername {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 300%;
+  padding: 0px;
+  margin: 0px;
+}
+#contentcreator {
+  font-family: 'Sacramento', cursive;
+  font-size: 230%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(78, 78, 78);
+    font-family: 'Permanent Marker', cursive;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 24%;
+    height: 100%;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+/* Middle column */
+.column.middle {
+    background-color: lightgray;
+    width: 52%;
+    border-radius: 5px;
+    text-align: center;
+}
+/* take away the border from the image links */
+a img {
+  outline : none;
+      }
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: lightgray;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid rgb(78, 78, 78);
+    margin: 2px;
+    border-radius: 5px;
+    font-family: 'Yesteryear', cursive;
+    font-size: 200%;
+}
+
+/* Style the Galery*/
+div.gallery {
+    margin: 5px;
+    background-color: lightgray;
+    color: black;
+    float: center;
+    width: 100%
+}
+
+div.gallery:hover {
+    border: none;
+}
+
+div.desc {
+    padding: 3px;
+}
